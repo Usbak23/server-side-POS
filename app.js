@@ -22,6 +22,7 @@ app.use('/', (req, res)=>{
     res.json({message : 'welcome to api toko ABCD'})
 });
 app.use(`${URL}`, authRouter)
+app.use(`${URL}`, UserRouter)
 app.use(`${URL}`, categoriesRouter)
 app.use(`${URL}`, barangRouter)
 
